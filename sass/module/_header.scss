@@ -1,0 +1,16 @@
+header {
+	width: 100%;
+	height: 75px;
+
+	position: fixed;
+	z-index: 100;
+
+	background: $teal;
+	border-bottom: 5px solid $coal;
+}
+
+.nav-wrapper {
+	max-width: $full;
+	margin: 0 auto;
+	padding: 0 25px;
+}
