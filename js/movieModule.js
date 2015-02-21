@@ -1,8 +1,8 @@
 (function() {
-  var app = angular.module('movieReview', []); //Module
+  var app = angular.module('movieReview', [])
 
 	app.controller('MovieController', function(){ //Controller
-    	this.products = movie;
+    	this.movies = movie;
     });
 
     app.controller('TabController', function(){ //Controller
@@ -19,8 +19,8 @@
     app.controller('ReviewController', function(){
       this.review = {};
     
-      this.addReview = function(product) {
-        product.reviews.push(this.review);
+      this.addReview = function(movie) {
+        movie.reviews.push(this.review);
         this.review = {};
       };
     });

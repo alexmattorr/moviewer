@@ -1,5 +1,4 @@
 .list-group-item-wrapper {
-	margin: 50px 0;
 	width: 33.3%;
 	float: left;
 	@include tablet() {
@@ -11,7 +10,10 @@
 }
 
 .list-group-item {
+	margin: 5px;
 	padding: 10px;
+	background: $white;
+	border: 1px solid lighten($coal, 50%);
 	h2 {
 		height: 90px;
 		margin-bottom: 15px;
@@ -23,12 +25,15 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+	h3 { height: 50px; }
+	h4 { height: 25px; }
+}
 
-	h3 {
-		height: 50px;
-	}
-
-	h4 {
-		height: 25px;
+@include small() {
+	.list-group-item {
+		margin: 5px 0px;
+		padding: 10px 0px;
+		border-left: none;
+		border-right: none;
 	}
 }

@@ -15,7 +15,13 @@ body {
 	margin: 0 auto;
 	padding: 125px 25px;
 
-	background: $white;
+	@include small() {
+		padding: 125px 0px;
+
+		h2, h3, h4, blockquote {
+			padding: 0 10px;
+		}
+	}
 }
 
 blockquote {
