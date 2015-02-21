@@ -10,13 +10,16 @@
 }
 
 .list-group-item {
-	margin: 5px;
-	padding: 10px;
+	margin: 10px;
 	background: $white;
-	border: 1px solid lighten($coal, 50%);
+
+	border-radius: 5px;
+
+	-moz-box-shadow: 0 0 5px lighten($coal, 50%);
+	-webkit-box-shadow: 0 0 5px lighten($coal, 50%);
+	box-shadow: 0 0 5px lighten($coal, 50%);
 	h2 {
-		height: 90px;
-		margin-bottom: 15px;
+		height: 27px;
 		display: block;
 		display: -webkit-box;
 		margin: 0 auto;
@@ -25,14 +28,35 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
-	h3 { height: 50px; }
-	h4 { height: 25px; }
+	h3 { 
+		height: 23px;
+		padding: 15px 0;
+		display: block;
+		display: -webkit-box;
+		margin: 0 auto;
+		-webkit-line-clamp: $lines-to-show;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	h4 { 
+		height: 25px; 
+		&.rating {
+			padding: 10px 10px 5px 10px;
+			background: $red;
+			color: $white;
+		}
+	}
+}
+
+.movie-info {
+	padding: 0 10px 10px 10px;
 }
 
 @include small() {
 	.list-group-item {
 		margin: 5px 0px;
-		padding: 10px 0px;
+		padding-bottom: 10px;
 		border-left: none;
 		border-right: none;
 	}

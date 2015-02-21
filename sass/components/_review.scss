@@ -1,0 +1,15 @@
+.review {
+	margin: 25px 0;
+	padding: 5px;
+	border-top: 1px solid $teal;
+	border-bottom: 1px solid $teal;
+
+	&:first-child {
+		margin-top: -5px;
+	}
+
+	@include small() {
+		border-left: none;
+		border-right: none;
+	}
+}

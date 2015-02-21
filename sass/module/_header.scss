@@ -19,3 +19,10 @@ header {
 		margin-top: 7px;
 	}
 }
+
+@include tablet() {
+	header {
+		position: absolute;
+		top: 0;
+	}
+}

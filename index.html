@@ -18,9 +18,8 @@
 
       <div class="container">
             <div class="list-group cf" id="wrap">
-                  <div class="list-group-item-wrapper" ng-repeat="movie in movie.movies">
+                  <div class="list-group-item-wrapper" ng-repeat="movie in movie.movies | filter:query | orderBy:'name' ">
                         <div class="list-group-item">
-                              <h2>{{movie.name}} </h2>
                               <div class="gallery">
                                     <img ng-src="{{movie.images[0]}}"/>
                               </div>
@@ -30,54 +29,57 @@
                                           <li ng-class="{ active: tab.isSet(2) }"><a href ng-click="tab.setTab(2)">Synopsis</a></li>
                                           <li ng-class="{ active: tab.isSet(3) }"><a href ng-click="tab.setTab(3)">Reviews</a></li>
                                     </ul>
-                                    <div class="tab-info" ng-show="tab.isSet(1)">
-                                          <h3>{{movie.rating}}</h3>
-                                          <h4>{{movie.director}}</h4><br />
-                                          <blockquote>{{movie.info}}</blockquote>
-                                    </div>
+                                          <article class="movie-info">
+                                                <div class="tab-info" ng-show="tab.isSet(1)">
+                                                      <h2>{{movie.name}} </h2>
+                                                      <blockquote>{{movie.director}}</blockquote>
+                                                      <h3>{{movie.info}}</h3>
+                                                </div>
 
-                                    <div class="tab-info" ng-show="tab.isSet(2)"> 
-                                          <blockquote>{{movie.description}}</blockquote>
-                                    </div>
+                                                <div class="tab-info" ng-show="tab.isSet(2)"> 
+                                                      <h2>{{movie.name}}</h2>
+                                                      <blockquote>{{movie.description}}</blockquote>
+                                                </div>
+                                          </article>
+                                          <div class="tab-info" ng-show="tab.isSet(3)" class="tab"> 
+                                                      <ul>
+                                                            <li class="review" ng-repeat="review in movie.reviews">
+                                                                  <blockquote>
+                                                                        <strong>{{review.stars}} Stars</strong>
+                                                                        {{review.body}}
+                                                                        <cite class="clearfix"><p>{{review.director}}</p></cite> 
+                                                                  </blockquote>
+                                                            </li>
+                                                      </ul>
 
-                                    <div class="tab-info" ng-show="tab.isSet(3)" class="tab"> 
-                                          <ul>
-                                                <li ng-repeat="review in movie.reviews">
-                                                      <blockquote>
-                                                            <strong>{{review.stars}} Stars</strong><br />
-                                                            {{review.body}}
-                                                            <cite class="clearfix"><p>- {{review.director}}</p></cite> 
-                                                      </blockquote>
-                                                </li>
-                                          </ul>
+                                                      <form class="review-form" name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(movie)" class="tab">
+                                                            <blockquote ng-show="review">
+                                                                  <strong>{{reviewCtrl.review.stars}} Stars<br /></strong>
+                                                                  {{reviewCtrl.review.body}}
+                                                                  <cite class="clearfix"><p>- {{reviewCtrl.review.director}}</p></cite>
+                                                            </blockquote>
 
-                                          <form class="review-form" name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(movie)" class="tab">
-                                                <blockquote ng-show="review">
-                                                      <strong>{{reviewCtrl.review.stars}} Stars<br /></strong>
-                                                      {{reviewCtrl.review.body}}
-                                                      <cite class="clearfix"><p>- {{reviewCtrl.review.director}}</p></cite>
-                                                </blockquote>
+                                                            <h4>Submit a Review</h4>
+                                                            <fieldset class="form-group">
+                                                                  <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" required />
+                                                                        <option value="">Rate the movie</option>
+                                                                  </select>
+                                                            </fieldset>
 
-                                                <h4>Submit a Review</h4>
-                                                <fieldset class="form-group">
-                                                      <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" required />
-                                                            <option value="">Rate the movie</option>
-                                                      </select>
-                                                </fieldset>
+                                                            <fieldset class="form-group">
+                                                                  <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a review" title="Review" required /></textarea>
+                                                            </fieldset>
 
-                                                <fieldset class="form-group">
-                                                      <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a review" title="Review" required /></textarea>
-                                                </fieldset>
+                                                            <fieldset class="form-group">
+                                                                  <input ng-model="reviewCtrl.review.director" type="email" class="form-control review-email" placeholder="Email" title="Email" required />
+                                                            </fieldset>
 
-                                                <fieldset class="form-group">
-                                                      <input ng-model="reviewCtrl.review.director" type="email" class="form-control review-email" placeholder="Email" title="Email" required />
-                                                </fieldset>
-
-                                                <fieldset class="form-group">
-                                                      <input type="submit" class="review-submit" value="Submit Review" />
-                                                </fieldset>
-                                          </form>
-                                    </div>	
+                                                            <fieldset class="form-group">
+                                                                  <input type="submit" class="review-submit" value="Submit Review" />
+                                                            </fieldset>
+                                                      </form>
+                                                </div>
+                                          <h4 class="rating">{{movie.rating}}</h4>	
                               </section>
                         </div>
                   </div>
