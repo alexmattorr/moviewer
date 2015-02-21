@@ -33,7 +33,7 @@
     	info: 'Comedy, Sci-Fi/ Fantasy', 
     	rating: "PG-13",
     	images: [
-    		"img/hot-tub-time-machine-2.jpeg"
+    		"img/hot-tub-time-machine-2.png"
     	],
     	reviews: [{
         body: "The movie was awesome!",
@@ -53,7 +53,7 @@
     	info: 'Comedy',
      	rating: "PG-13",
      	images: [
-     		"img/the-duff-final.jpg"
+     		"img/the-duff-final.png"
      	],
      	reviews: [{
         body: "The movie was awesome!",
@@ -73,7 +73,7 @@
     	info: 'Action/Adventure, Comedy', 
      	rating: "R",
      	images: [
-     		"img/kingsman.jpg"
+     		"img/kingsman.png"
      	],
      	reviews: [{
         body: "The movie was awesome!",

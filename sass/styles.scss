@@ -12,12 +12,14 @@
 @import "base/typography";
 
 // components
+@import "components/list-group-item";
 @import "components/gallery";
+@import "components/tabs";
 
 // module
 @import "module/header";
 @import "module/footer";
-@import "module/list-group-item";
+@import "module/list-group";
 
 // font-awesome
 @import "font-awesome/variables";
