@@ -1,0 +1,65 @@
+.review-form {
+	margin-top: 25px;
+	padding: 10px;
+	background: $teal;
+	text-align: center;
+
+	h4 { color: $white; }
+	textarea:focus, input:focus {  outline: 0; }
+
+	.review-submit, select {
+		width: 100%;
+		margin: 5px auto;
+	}
+
+	.review-email, textarea {
+		width: 95%;
+		margin: 5px auto;
+	}
+
+	input, textarea {
+		border: none;
+		padding-left: 10px;
+		background: $white;
+		color: $coal;
+		font-family: $site-font;
+	}
+
+	.review-submit {
+		background: $coal;
+		color: $white;
+		font-size: 16px;
+		font-family: $site-font;
+		cursor: pointer;
+		transition-property: background, color;
+		transition-duration: .3s;
+
+		&:hover {
+			background: $white;
+			color: $coal;
+		}
+	}
+
+	textarea { height: 50px; }
+	input { height: 25px; }
+
+	::-webkit-input-placeholder {
+		font-family: $site-font;
+		letter-spacing: 1px;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		font-family: $site-font;
+		letter-spacing: 1px;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		font-family: $site-font;
+		letter-spacing: 1px;  
+	}
+
+	:-ms-input-placeholder {  
+		font-family: $site-font;
+		letter-spacing: 1px; 
+	}
+}
