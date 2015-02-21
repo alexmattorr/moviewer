@@ -21,7 +21,7 @@
             </div>
             <div class="list-group" id="wrap">
                   <div class="list-group-item" ng-repeat="product in movie.products">
-                        <h3>{{product.name}} <em class="pull-right" id="moneyGreen">{{product.price | currency}}</em></h3>
+                        <h3>{{product.name}} <em class="pull-right" id="moneyGreen">{{product.rating}}</em></h3>
                         <h4>{{product.director}}</h4><br />
                         <div class="gallery">
                               <img ng-src="{{product.images[0]}}"/>
@@ -51,7 +51,6 @@
 
                               <div ng-show="tab.isSet(3)" class="tab"> 
                                     <ul>
-                                          <h4>Reviews</h4>
                                           <li ng-repeat="review in product.reviews">
                                                 <blockquote>
                                                       <strong>{{review.stars}} Stars</strong><br />

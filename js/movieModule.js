@@ -27,16 +27,16 @@
 
 //Array for books and their information.
   var movie = [{ 
-    	name: 'The Universe in a Nutshell',
-    	director: 'Stephen Hawking',
-    	description: 'Stephen Hawking’s phenomenal, multimillion-copy bestseller, A Brief History of Time, introduced the ideas of this brilliant theoretical physicist to readers all over the world. ',
-    	info: '11 x 8, hardcover, 1995', 
-    	price: 23.03,
+    	name: 'Hot Tub Time Machine 2',
+    	director: 'Steve Pink',
+    	description: 'Hot Tub Time Machine director Steve Pink returns to the helm for this sequel set ten years in the future, when Nick (Craig Robinson), Jacob (Clark Duke), and Adam Jr. (Adam Scott) must help Lou (Rob Corddry) out of a jam in the past.',
+    	info: 'Comedy, Sci-Fi/ Fantasy', 
+    	rating: "PG-13",
     	images: [
-    		"img/book1.jpg"
+    		"img/hot-tub-time-machine-2.jpeg"
     	],
     	reviews: [{
-        body: "The book was awesome!",
+        body: "The movie was awesome!",
         director: "alexmattorr@gmail.com",
         stars: "4"  
       }, {
@@ -47,16 +47,16 @@
     },
 
     { 
-    	name: 'The Dispossessed',
-    	director: 'Ursula K. Le Guin',
-    	description: 'Shevek, a brilliant physicist, decides to take action. he will seek answers, question the unquestionable, and attempt to tear down the walls of hatred that have isolated his planet of anarchists from the rest of the civilized universe. To do this dangerous task will mean giving up his family and possibly his life. Shevek must make the unprecedented journey to the utopian mother planet, Anarres, to challenge the complex structures of life and living, and ignite the fires of change.',
-    	info: '11 x 8, hardcover, 1995',
-     	price: 7.11,
+    	name: 'The Duff',
+    	director: 'Ari Sandel',
+    	description: "Emotionally devastated after learning that she's secretly referred to as The DUFF (Designated Ugly Fat Friend) by the entire student body, high-school senior Bianca (Mae Whitman) dismisses the cautionary advice of her favorite teacher (Ken Jeong), turns her back on her longtime crush Toby (Nick Eversman), and enlists the help of charismatic jock Wesley (Robbie Amell) to help salvage what's left of her senior year. As the once-contented senior wages a monumental struggle to regain her confidence, she gradually turns her efforts toward knocking cruel class queen bee Madison (Bella Thorne) from her throne up on high. Based on the popular novel by Kody Keplinger.",
+    	info: 'Comedy',
+     	rating: "PG-13",
      	images: [
-     		"img/book2.jpg"
+     		"img/the-duff-final.jpg"
      	],
      	reviews: [{
-        body: "The book was awesome!",
+        body: "The movie was awesome!",
         director: "alexmattorr@gmail.com",
         stars: "4"  
       }, {
@@ -67,16 +67,16 @@
      },
 
     { 
-    	name:'The Elements of Typographic Style',
-    	director: 'Robert Bringhurst',
-    	description: 'A readable manual and reference on modern typography, exploring the art and history of the field as well as technical details. Includes b&w illustrations, a glossary, and reference appendices. This second edition includes a new chapter on digital typography, expanded information on typefaces and des',
-    	info: '11 x 8, hardcover, 1995', 
-     	price: 8.95,
+    	name:'Kingsman: The Secret Service',
+    	director: 'Matthew Vaughn',
+    	description: "Mark Millar and Dave Gibbons' comic series is adapted for the big screen in this Matthew Vaughn-directed action thriller. The story centers on a secret agent who recruits a juvenile delinquent into a top-secret spy organization. Together, they battle a tech genius with diabolical ambitions.",
+    	info: 'Action/Adventure, Comedy', 
+     	rating: "R",
      	images: [
-     		"img/book3.jpg"
+     		"img/kingsman.jpg"
      	],
      	reviews: [{
-        body: "The book was awesome!",
+        body: "The movie was awesome!",
         director: "alexmattorr@gmail.com",
         stars: "5"  
       }, {
