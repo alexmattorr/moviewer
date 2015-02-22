@@ -7,6 +7,8 @@
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <script type="text/javascript" src="js/angular.min.js"></script>
       <script type="text/javascript" src="js/movieModule.js"></script>
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body ng-controller="MovieController as movie">
@@ -26,8 +28,8 @@
                               <section class="tab" ng-controller="TabController as tab"> 
                                     <ul class="tabs cf">
                                           <li ng-class="{ active: tab.isSet(1) }"><a href ng-click="tab.setTab(1)">Info</a></li>
-                                          <li ng-class="{ active: tab.isSet(2) }"><a href ng-click="tab.setTab(2)">Synopsis</a></li>
-                                          <li ng-class="{ active: tab.isSet(3) }"><a href ng-click="tab.setTab(3)">Reviews</a></li>
+                                          <li class="slide-tab" ng-class="{ active: tab.isSet(2) }"><a href ng-click="tab.setTab(2)">Synopsis</a></li>
+                                          <li class="slide-tab" ng-class="{ active: tab.isSet(3) }"><a href ng-click="tab.setTab(3)">Reviews</a></li>
                                     </ul>
                                           <article class="movie-info">
                                                 <div class="tab-info" ng-show="tab.isSet(1)">
