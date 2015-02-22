@@ -4,6 +4,8 @@
 	text-align: center;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	transition-property: height;
+	transition-duration: .3s;
 	img {
 		width: 100%;
 		height: auto;

@@ -1,4 +1,5 @@
 .tab {
+	height: 50%;
 	.tabs {
 		width: 100%;
 		margin-bottom: 25px;
@@ -22,11 +23,8 @@
 		}
 	}
 
-/* 	.tab-info {
-		height: 400px;
-		transition: .5s linear all;
-		&.ng-hide {
-			height: 0px;
-		}
-	} */
+	.tab-info-block {
+		max-height: 200px;
+		overflow: scroll;
+	}
 }
