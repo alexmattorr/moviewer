@@ -10,6 +10,7 @@
 }
 
 .list-group-item {
+	height: 565px;
 	margin: 10px;
 	background: $white;
 
@@ -45,6 +46,23 @@
 			padding: 10px 10px 5px 10px;
 			background: $red;
 			color: $white;
+		}
+	}
+
+	&:hover {
+		.gallery {
+			-webkit-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+			transition: all .3s ease;
+			img {
+				-webkit-transform:scale(1.15);
+				-moz-transform:scale(1.15);
+				-ms-transform:scale(1.15);
+				-o-transform:scale(1.15);
+				 transform:scale(1.15);
+			}
 		}
 	}
 }
