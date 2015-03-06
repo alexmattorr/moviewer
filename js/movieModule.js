@@ -1,5 +1,6 @@
 (function() {
-  var app = angular.module('movieReview', [])
+  var app = angular.module('movieReview', []);
+  var app=angular.module('two_way',[]);
 
 	app.controller('MovieController', function(){ //Controller
     	this.movies = movie;
