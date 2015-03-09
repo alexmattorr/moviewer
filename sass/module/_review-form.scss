@@ -13,12 +13,14 @@
 	}
 
 	.review-email, textarea {
-		width: 95%;
+		width: 100%;
 		margin: 5px auto;
 	}
 
-	input, textarea {
-		border: none;
+	input, textarea, select {
+		border-width: 2px;
+		border-radius: 0px;
+		box-sizing: border-box;
 		padding-left: 10px;
 		background: $white;
 		color: $coal;
@@ -27,6 +29,7 @@
 
 	.review-submit {
 		background: $coal;
+		border: none;
 		color: $white;
 		font-size: 16px;
 		font-family: $site-font;
@@ -63,3 +66,6 @@
 		letter-spacing: 1px; 
 	}
 }
+
+.ng-invalid { border-color: $red; }
+.ng-valid { border-color: green; }

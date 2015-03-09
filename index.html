@@ -47,33 +47,59 @@
                                                 <ul>
                                                       <li class="review" ng-repeat="review in movie.reviews">
                                                             <blockquote>
-                                                                  <strong>{{review.stars}} Stars</strong>
-                                                                  {{review.body}}
-                                                                  <cite class="clearfix"><p>{{review.director}}</p></cite> 
+                                                                  {{review.stars}} Stars<br />
+                                                                  {{review.comment}}<br />
+                                                                 {{review.username}}
                                                             </blockquote>
                                                       </li>
                                                 </ul>
 
-                                                <form class="review-form" name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(movie)" class="tab">
+                                                <form 
+                                                      class="review-form" 
+                                                      name="reviewForm" 
+                                                      ng-controller="ReviewController as reviewCtrl"
+                                                      ng-submit="reviewForm.$valid && reviewCtrl.addReview(movie)"
+                                                      novalidate
+                                                      class="tab"
+                                                >
                                                       <blockquote class="tab-info-block" ng-show="review">
-                                                            <strong>{{reviewCtrl.review.stars}} Stars<br /></strong>
-                                                            {{reviewCtrl.review.body}}
-                                                            <cite class="clearfix"><p>- {{reviewCtrl.review.director}}</p></cite>
+                                                            {{reviewCtrl.review.stars}} Stars<br />
+                                                            {{reviewCtrl.review.comment}}<br />
+                                                            - {{reviewCtrl.review.username}}
                                                       </blockquote>
 
                                                       <h4>Submit a Review</h4>
                                                       <fieldset class="form-group">
-                                                            <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" required />
-                                                                  <option value="">Rate the movie</option>
+                                                            <select 
+                                                                  ng-model="reviewCtrl.review.stars" 
+                                                                  class="form-control" 
+                                                                  ng-options="stars for stars in [5,4,3,2,1]" 
+                                                                  title="Stars" 
+                                                                  required 
+                                                            />
+                                                                  <option value="5">Rate the movie</option>
                                                             </select>
                                                       </fieldset>
 
                                                       <fieldset class="form-group">
-                                                            <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a review" title="Review" required /></textarea>
+                                                            <textarea 
+                                                                  ng-model="reviewCtrl.review.comment" 
+                                                                  class="form-control" 
+                                                                  placeholder="Write a review" 
+                                                                  title="Review"
+                                                                  required
+                                                            />
+                                                            </textarea>
                                                       </fieldset>
 
                                                       <fieldset class="form-group">
-                                                            <input ng-model="reviewCtrl.review.director" type="email" class="form-control review-email" placeholder="Email" title="Email" required />
+                                                            <input 
+                                                                  ng-model="reviewCtrl.review.username" 
+                                                                  type="text" 
+                                                                  class="form-control review-email" 
+                                                                  placeholder="username" title="username" 
+                                                                  required
+                                                            />
                                                       </fieldset>
 
                                                       <fieldset class="form-group">

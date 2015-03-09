@@ -34,12 +34,12 @@
 	    		"img/hot-tub-time-machine-2.png"
 	    	],
 	    	reviews: [{
-		        	body: "The movie was awesome!",
-		        	director: "alexmattorr@gmail.com",
+		        	comment: "The movie was awesome!",
+		        	username: "alexmattorr@gmail.com",
 		        	stars: "4"  
 		}, {
-		        	body: "Opened up a whole new perspective.",
-		        	director: "jane1995@yahoo.com",
+		        	comment: "Opened up a whole new perspective.",
+		        	username: "jane1995@yahoo.com",
 		        	stars: "5"
 	      	}]
 	}, { 
@@ -52,12 +52,12 @@
 	     		"img/the-duff.png"
 	     	],
 	     	reviews: [{
-		        	body: "The movie was awesome!",
-		        	director: "alexmattorr@gmail.com",
+		        	comment: "The movie was awesome!",
+		        	username: "alexmattorr@gmail.com",
 		        	stars: "4"  
 	    	  }, {
-		        	body: "Opened up a whole new perspective.",
-		        	director: "jane1995@yahoo.com",
+		        	comment: "Opened up a whole new perspective.",
+		        	username: "jane1995@yahoo.com",
 		        	stars: "3"
 	      	}]
 	}, { 
@@ -70,12 +70,12 @@
 			"img/seventh-son.png"
 		],
 		reviews: [{
-			body: "The movie was awesome!",
-		        	director: "alexmattorr@gmail.com",
+			comment: "The movie was awesome!",
+		        	username: "alexmattorr@gmail.com",
 		        	stars: "4" 
 		}, {
-		        	body: "Opened up a whole new perspective.",
-		        	director: "jane1995@yahoo.com",
+		        	comment: "Opened up a whole new perspective.",
+		        	username: "jane1995@yahoo.com",
 		        	stars: "3"
 		}]
 	}, { 
@@ -88,12 +88,12 @@
 			"img/spongebob.png"
 		],
 		reviews: [{
-			body: "The movie was awesome!",
-			director: "alexmattorr@gmail.com",
+			comment: "The movie was awesome!",
+			username: "alexmattorr@gmail.com",
 			stars: "4"  
 		}, {
-			body: "Opened up a whole new perspective.",
-			director: "jane1995@yahoo.com",
+			comment: "Opened up a whole new perspective.",
+			username: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	}, { 
@@ -106,12 +106,12 @@
 			"img/50-shades.png"
 		],
 		reviews: [{
-			body: "The movie was awesome!",
-			director: "alexmattorr@gmail.com",
+			comment: "The movie was awesome!",
+			username: "alexmattorr@gmail.com",
 			stars: "4"  
 		}, {
-			body: "Opened up a whole new perspective.",
-			director: "jane1995@yahoo.com",
+			comment: "Opened up a whole new perspective.",
+			username: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	}, { 
@@ -124,12 +124,12 @@
 			"img/paddington.png"
 		],
 		reviews: [{
-			body: "The movie was awesome!",
-			director: "alexmattorr@gmail.com",
+			comment: "The movie was awesome!",
+			username: "alexmattorr@gmail.com",
 			stars: "4"  
 		}, {
-			body: "Opened up a whole new perspective.",
-			director: "jane1995@yahoo.com",
+			comment: "Opened up a whole new perspective.",
+			username: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	}, { 
@@ -141,13 +141,13 @@
 		images: [
 			"img/the-wedding-ringer.png"
 		],
-		reviews: [{
-			body: "The movie was awesome!",
-			director: "alexmattorr@gmail.com",
+		reviews: [{			
+			comment: "The movie was awesome!",
+			username: "alexmattorr@gmail.com",
 			stars: "4"  
 		}, {
-			body: "Opened up a whole new perspective.",
-			director: "jane1995@yahoo.com",
+			comment: "Opened up a whole new perspective.",
+			username: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	}, { 
@@ -160,12 +160,12 @@
 			"img/American-Sniper.png"
 		],
 		reviews: [{
-			body: "The movie was awesome!",
-			director: "alexmattorr@gmail.com",
+			comment: "The movie was awesome!",
+			username: "alexmattorr@gmail.com",
 			stars: "4"  
 		}, {
-			body: "Opened up a whole new perspective.",
-			director: "jane1995@yahoo.com",
+			comment: "Opened up a whole new perspective.",
+			username: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	},{ 
@@ -178,12 +178,12 @@
 			"img/kingsman.png"
 		],
 		reviews: [{
-			body: "The movie was awesome!",
-			director: "alexmattorr@gmail.com",
+			comment: "The movie was awesome!",
+			username: "alexmattorr@gmail.com",
 			stars: "5"  
 		}, {
-			body: "Opened up a whole new perspective.",
-			director: "jane1995@yahoo.com",
+			comment: "Opened up a whole new perspective.",
+			username: "jane1995@yahoo.com",
 			stars: "2"
 		}]
 	}];
