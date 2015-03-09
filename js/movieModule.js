@@ -1,5 +1,6 @@
 (function() {
-	var app = angular.module('movieReview', [])
+	var app = angular.module('movieReview', []);
+	var app=angular.module('two_way',[]);
 
 	app.controller('MovieController', function() {
     		this.movies = movie;
@@ -23,6 +24,18 @@
         			this.review = {};
       		};
    	});
+
+    	app.controller('db_control', function($scope, $http, $interval) {
+    		load_comments();
+    		$interval(function() {
+    			load_comments();
+    		}, 300);
+    		function load_comments() {
+    			$http.get('http://localhost:8888/load').success(function(data) {
+    				$scope.load_comments=data;
+    			});
+    		};
+    	});
 
   	var movie = [{ 
 	    	name: 'Hot Tub Time Machine 2',
