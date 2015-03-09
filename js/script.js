@@ -6,7 +6,7 @@ function baseJS() {
 			});
 		};
 
-		// slideTab();
+		slideTab();
 	});
 };
 
