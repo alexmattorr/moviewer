@@ -53,6 +53,11 @@
 		}, {
 		        	comment: "Opened up a whole new perspective.",
 		        	user: "jane1995",
+		        	user: "alexmattorr@gmail.com",
+		        	stars: "4"  
+		}, {
+		        	comment: "Opened up a whole new perspective.",
+		        	user: "jane1995@yahoo.com",
 		        	stars: "5"
 	      	}]
 	}, { 
@@ -71,6 +76,11 @@
 	    	  }, {
 		        	comment: "Opened up a whole new perspective.",
 		        	user: "jane1995",
+		        	user: "alexmattorr@gmail.com",
+		        	stars: "4"  
+	    	  }, {
+		        	comment: "Opened up a whole new perspective.",
+		        	user: "jane1995@yahoo.com",
 		        	stars: "3"
 	      	}]
 	}, { 
@@ -89,6 +99,11 @@
 		}, {
 		        	comment: "Opened up a whole new perspective.",
 		        	user: "jane1995",
+		        	user: "alexmattorr@gmail.com",
+		        	stars: "4" 
+		}, {
+		        	comment: "Opened up a whole new perspective.",
+		        	user: "jane1995@yahoo.com",
 		        	stars: "3"
 		}]
 	}, { 
@@ -107,6 +122,11 @@
 		}, {
 			comment: "Opened up a whole new perspective.",
 			user: "jane1995",
+			user: "alexmattorr@gmail.com",
+			stars: "4"  
+		}, {
+			comment: "Opened up a whole new perspective.",
+			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	}, { 
@@ -125,6 +145,11 @@
 		}, {
 			comment: "Opened up a whole new perspective.",
 			user: "jane1995",
+			user: "alexmattorr@gmail.com",
+			stars: "4"  
+		}, {
+			comment: "Opened up a whole new perspective.",
+			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	}, { 
@@ -143,6 +168,11 @@
 		}, {
 			comment: "Opened up a whole new perspective.",
 			user: "jane1995",
+			user: "alexmattorr@gmail.com",
+			stars: "4"  
+		}, {
+			comment: "Opened up a whole new perspective.",
+			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	}, { 
@@ -161,7 +191,6 @@
 		}, {
 			comment: "Opened up a whole new perspective.",
 			user: "jane1995",
-			stars: "3"
 		}]
 	}, { 
 		name: 'American Sniper',
@@ -179,6 +208,10 @@
 		}, {
 			comment: "Opened up a whole new perspective.",
 			user: "jane1995",
+			stars: "4"  
+		}, {
+			comment: "Opened up a whole new perspective.",
+			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
 	},{ 
@@ -193,6 +226,10 @@
 		reviews: [{
 			comment: "The movie was awesome!",
 			user: "alexmattorr",
+			stars: "5"  
+		}, {
+			comment: "Opened up a whole new perspective.",
+			user: "jane1995",
 			stars: "5"  
 		}, {
 			comment: "Opened up a whole new perspective.",
