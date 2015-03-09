@@ -1,6 +1,5 @@
 (function() {
 	var app = angular.module('movieReview', []);
-	var app=angular.module('two_way',[]);
 
 	app.controller('MovieController', function() {
     		this.movies = movie;
@@ -45,8 +44,9 @@
 	    	rating: "PG-13",
 	    	images: [
 	    		"img/hot-tub-time-machine-2.png"
-	    	],
-	    	reviews: [{
+	    	]
+/*	    	
+		reviews: [{
 		        	comment: "The movie was awesome!",
 		        	user: "alexmattorr",
 		        	stars: "4"  
@@ -60,6 +60,7 @@
 		        	user: "jane1995@yahoo.com",
 		        	stars: "5"
 	      	}]
+*/
 	}, { 
 	    	name: 'The Duff',
 	    	director: 'Ari Sandel',
@@ -68,7 +69,8 @@
 	     	rating: "PG-13",
 	     	images: [
 	     		"img/the-duff.png"
-	     	],
+	     	]
+/*
 	     	reviews: [{
 		        	comment: "The movie was awesome!",
 		        	user: "alexmattorr",
@@ -83,6 +85,7 @@
 		        	user: "jane1995@yahoo.com",
 		        	stars: "3"
 	      	}]
+*/
 	}, { 
 		name: 'Seventh Son',
 		director: 'Sergei Bodrov',
@@ -91,7 +94,8 @@
 		rating: "PG-13",
 		images: [
 			"img/seventh-son.png"
-		],
+		]
+/*
 		reviews: [{
 			comment: "The movie was awesome!",
 		        	user: "alexmattorr",
@@ -106,6 +110,7 @@
 		        	user: "jane1995@yahoo.com",
 		        	stars: "3"
 		}]
+*/
 	}, { 
 		name: 'The Spongebog Movie: Sponge Out Of Water',
 		director: 'Paul Tibbitt',
@@ -114,7 +119,8 @@
 		rating: "PG",
 		images: [
 			"img/spongebob.png"
-		],
+		]
+/*
 		reviews: [{
 			comment: "The movie was awesome!",
 			user: "alexmattorr",
@@ -129,6 +135,7 @@
 			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
+*/
 	}, { 
 		name: 'Fifty Shades of Grey',
 		director: 'Sam Taylor-Johnson',
@@ -137,7 +144,8 @@
 		rating: "R",
 		images: [
 			"img/50-shades.png"
-		],
+		]
+/*
 		reviews: [{
 			comment: "The movie was awesome!",
 			user: "alexmattorr",
@@ -152,6 +160,7 @@
 			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
+*/
 	}, { 
 		name: 'Paddington',
 		director: 'Paul King',
@@ -160,7 +169,8 @@
 		rating: "PG",
 		images: [
 			"img/paddington.png"
-		],
+		]
+/*
 		reviews: [{
 			comment: "The movie was awesome!",
 			user: "alexmattorr",
@@ -175,6 +185,7 @@
 			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
+*/
 	}, { 
 		name: 'The Wedding Ringer',
 		director: 'Jeremy Garelick',
@@ -183,7 +194,8 @@
 		rating: "R",
 		images: [
 			"img/the-wedding-ringer.png"
-		],
+		]
+/*
 		reviews: [{
 			comment: "The movie was awesome!",
 			user: "alexmattorr",
@@ -192,6 +204,7 @@
 			comment: "Opened up a whole new perspective.",
 			user: "jane1995",
 		}]
+*/
 	}, { 
 		name: 'American Sniper',
 		director: 'Clint Eastwood',
@@ -200,7 +213,8 @@
 		rating: "R",
 		images: [
 			"img/American-Sniper.png"
-		],
+		]
+/*
 		reviews: [{
 			comment: "The movie was awesome!",
 			user: "alexmattorr",
@@ -214,6 +228,7 @@
 			user: "jane1995@yahoo.com",
 			stars: "3"
 		}]
+*/
 	},{ 
 		name:'Kingsman: The Secret Service',
 		director: 'Matthew Vaughn',
@@ -222,7 +237,8 @@
 		rating: "R",
 		images: [
 			"img/kingsman.png"
-		],
+		]
+/*
 		reviews: [{
 			comment: "The movie was awesome!",
 			user: "alexmattorr",
@@ -236,5 +252,6 @@
 			user: "jane1995",
 			stars: "2"
 		}]
+		*/
 	}];
 })();
