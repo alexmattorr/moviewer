@@ -58,8 +58,8 @@
                                                 <form class="review-form" name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(movie)" class="tab">
                                                       <blockquote class="tab-info-block" ng-show="review">
                                                             <strong>{{reviewCtrl.review.stars}} Stars<br /></strong>
-                                                            {{reviewCtrl.review.body}}
-                                                            <cite class="clearfix"><p>- {{reviewCtrl.review.director}}</p></cite>
+                                                            {{reviewCtrl.review.comment}}
+                                                            <cite class="clearfix"><p>- {{reviewCtrl.review.user}}</p></cite>
                                                       </blockquote>
 
                                                       <h4>Submit a Review</h4>
