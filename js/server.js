@@ -17,6 +17,8 @@ connection.connect(function(error) {
 	}
 });
 
+app.use(express.session());
+
 app.listen(8888,function() {
 	console.log("It's Started on PORT 8888");
 });
