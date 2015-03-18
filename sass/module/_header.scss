@@ -1,12 +1,12 @@
 header {
 	width: 100%;
-	height: 75px;
+	padding: 10px 0;
 
 	position: fixed;
 	z-index: 100;
 
 	background: $teal;
-	border-bottom: 5px solid $coal;
+	border-bottom: 5px solid $white;
 }
 
 .nav-wrapper {
@@ -16,7 +16,24 @@ header {
 	color: $white;
 
 	h1 {
-		margin-top: 7px;
+		font-size: 35px;
+		display: inline-block;
+	}
+
+	.search-filter {
+		display: inline-block;
+		float: right;
+		input {
+			width: 300px;
+			padding: 5px 15px;
+			border: none;
+			box-sizing: border-box;
+			font-size: 1.2rem;
+			letter-spacing: 1px;
+			&:focus {
+				outline: none;
+			}
+		}
 	}
 }
 
@@ -24,5 +41,20 @@ header {
 	header {
 		position: absolute;
 		top: 0;
+	}
+}
+
+@include phone() {
+	h1,
+	.search-filter {
+		display: block;
+	}
+
+	.search-filter {
+		display: block !important;
+		float: none !important;
+		input {
+			width: 100% !important;
+		}
 	}
 }
