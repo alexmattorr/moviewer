@@ -16,8 +16,6 @@
 	if(!mysql_query($sql, $con)) {
 		die('Error:' . mysql_error());
 	}
-
-	echo "Comment Recorded";
-
+	header('location: index.php');
 	mysql_close($con);
 ?>
