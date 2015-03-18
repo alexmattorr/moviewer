@@ -45,20 +45,19 @@
 						<ul>
 							<li class="review" ng-repeat="db_control as reviewCtrl">
 								{{reviewCtrl.data.load_comments}}
-							</li>
-						</ul>
-<!-- 
+							</li> 
 						<form
 							class="review-form"
 							name="reviewForm"
 							ng-controller="ReviewController as reviewCtrl"
-							ng-controller='db_control as reviewCtrl'
 							ng-submit="reviewForm.$valid && reviewCtrl.addReview(movie)"
 							novalidate
 							class="tab"
 							>
 							<blockquote class="tab-info-block" ng-show="review" >
-								{{reviewCtrl.data.load_comments}}
+								{{reviewCtrl.review.stars}} Stars<br />
+                                                            		{{reviewCtrl.review.comment}}<br />
+                                                            		- {{reviewCtrl.review.username}}
 							</blockquote>
 							<h4>Submit a Review</h4>
 							<fieldset class="form-group">
@@ -95,7 +94,6 @@
 								<input type="submit" class="review-submit" value="Submit Review" />
 							</fieldset>
 						</form>
--->
 					</div>
 				</section>
 				<h4 class="rating">{{movie.rating}}</h4>

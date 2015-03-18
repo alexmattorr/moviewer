@@ -25,6 +25,7 @@
    	});
 
     	app.controller('db_control', function($scope, $http, $interval) {
+    		this.reveiw = {}
     		load_comments();
     		$interval(function() {
     			load_comments();
@@ -47,18 +48,20 @@
 	    	]
 /*	    	
 		reviews: [{
-		        	comment: "The movie was awesome!",
-		        	user: "alexmattorr",
-		        	stars: "4"  
+		        	movie_id: 3,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-		        	comment: "Opened up a whole new perspective.",
-		        	user: "jane1995",
-		        	user: "alexmattorr@gmail.com",
-		        	stars: "4"  
+		        	movie_id: 3,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-		        	comment: "Opened up a whole new perspective.",
-		        	user: "jane1995@yahoo.com",
-		        	stars: "5"
+		        	movie_id: 3,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 	      	}]
 */
 	}, { 
@@ -70,20 +73,22 @@
 	     	images: [
 	     		"img/the-duff.png"
 	     	]
-/*
-	     	reviews: [{
-		        	comment: "The movie was awesome!",
-		        	user: "alexmattorr",
-		        	stars: "4"  
-	    	  }, {
-		        	comment: "Opened up a whole new perspective.",
-		        	user: "jane1995",
-		        	user: "alexmattorr@gmail.com",
-		        	stars: "4"  
-	    	  }, {
-		        	comment: "Opened up a whole new perspective.",
-		        	user: "jane1995@yahoo.com",
-		        	stars: "3"
+/*	    	
+		reviews: [{
+		        	movie_id: 7,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+		}, {
+		        	movie_id: 7,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+		}, {
+		        	movie_id: 7,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 	      	}]
 */
 	}, { 
@@ -95,21 +100,23 @@
 		images: [
 			"img/seventh-son.png"
 		]
-/*
+/*	    	
 		reviews: [{
-			comment: "The movie was awesome!",
-		        	user: "alexmattorr",
-		        	stars: "4" 
+		        	movie_id: 6,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-		        	comment: "Opened up a whole new perspective.",
-		        	user: "jane1995",
-		        	user: "alexmattorr@gmail.com",
-		        	stars: "4" 
+		        	movie_id: 6,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-		        	comment: "Opened up a whole new perspective.",
-		        	user: "jane1995@yahoo.com",
-		        	stars: "3"
-		}]
+		        	movie_id: 6,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+	      	}]
 */
 	}, { 
 		name: 'The Spongebog Movie: Sponge Out Of Water',
@@ -120,21 +127,23 @@
 		images: [
 			"img/spongebob.png"
 		]
-/*
+/*	    	
 		reviews: [{
-			comment: "The movie was awesome!",
-			user: "alexmattorr",
-			stars: "4"  
+		        	movie_id: 8,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995",
-			user: "alexmattorr@gmail.com",
-			stars: "4"  
+		        	movie_id: 8,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		        	movie_id: 8,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+	      	}]
 */
 	}, { 
 		name: 'Fifty Shades of Grey',
@@ -145,21 +154,23 @@
 		images: [
 			"img/50-shades.png"
 		]
-/*
+/*	    	
 		reviews: [{
-			comment: "The movie was awesome!",
-			user: "alexmattorr",
-			stars: "4"  
+		        	movie_id: 2,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995",
-			user: "alexmattorr@gmail.com",
-			stars: "4"  
+		        	movie_id: 2,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		        	movie_id: 2,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+	      	}]
 */
 	}, { 
 		name: 'Paddington',
@@ -170,21 +181,23 @@
 		images: [
 			"img/paddington.png"
 		]
-/*
+/*	    	
 		reviews: [{
-			comment: "The movie was awesome!",
-			user: "alexmattorr",
-			stars: "4"  
+		        	movie_id: 5,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995",
-			user: "alexmattorr@gmail.com",
-			stars: "4"  
+		        	movie_id: 5,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		        	movie_id: 5,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+	      	}]
 */
 	}, { 
 		name: 'The Wedding Ringer',
@@ -195,15 +208,23 @@
 		images: [
 			"img/the-wedding-ringer.png"
 		]
-/*
+/*	    	
 		reviews: [{
-			comment: "The movie was awesome!",
-			user: "alexmattorr",
-			stars: "4"  
+		        	movie_id: 10,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995",
-		}]
+		        	movie_id: 10,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+		}, {
+		        	movie_id: 10,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+	      	}]
 */
 	}, { 
 		name: 'American Sniper',
@@ -214,20 +235,28 @@
 		images: [
 			"img/American-Sniper.png"
 		]
-/*
+	    	
 		reviews: [{
-			comment: "The movie was awesome!",
-			user: "alexmattorr",
-			stars: "4"  
+			stars: " ",
+			comment: " ",
+			username: " "
+/*			
+		        	movie_id: 1,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995",
-			stars: "4"  
+		        	movie_id: 1,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		        	movie_id: 1,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+
+	      	}]
 */
 	},{ 
 		name:'Kingsman: The Secret Service',
@@ -238,20 +267,23 @@
 		images: [
 			"img/kingsman.png"
 		]
-/*
+/*	    	
 		reviews: [{
-			comment: "The movie was awesome!",
-			user: "alexmattorr",
-			stars: "5"  
+		        	movie_id: 4,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995",
-			stars: "5"  
+		        	movie_id: 4,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
 		}, {
-			comment: "Opened up a whole new perspective.",
-			user: "jane1995",
-			stars: "2"
-		}]
-		*/
+		        	movie_id: 4,
+		        	stars: " ", 
+		        	username: " ", 
+		        	review: " "
+	      	}]
+*/
 	}];
 })();
