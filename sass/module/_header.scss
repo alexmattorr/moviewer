@@ -1,19 +1,18 @@
 header {
 	width: 100%;
-	padding: 10px 0;
+	padding: 20px 0;
 
 	position: fixed;
 	z-index: 100;
 
-	background: $teal;
-	border-bottom: 5px solid $white;
+	background: $coal;
 }
 
 .nav-wrapper {
 	max-width: $full;
 	margin: 0 auto;
 	padding: 0 25px;
-	color: $white;
+	color: $teal;
 
 	h1 {
 		font-size: 35px;
@@ -26,6 +25,8 @@ header {
 		input {
 			width: 300px;
 			padding: 5px 15px;
+			background: $teal;
+			color: $white;
 			border: none;
 			box-sizing: border-box;
 			font-size: 1.2rem;
@@ -33,6 +34,20 @@ header {
 			&:focus {
 				outline: none;
 			}
+		}
+		::-webkit-input-placeholder { /* WebKit browsers */
+		    color: $white;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color: $white;
+		   opacity:  1;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color: $white;
+		   opacity:  1;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10+ */
+		   color: $white;
 		}
 	}
 }
@@ -49,6 +64,8 @@ header {
 	.search-filter {
 		display: block;
 	}
+
+	h1 { margin-bottom: 20px; }
 
 	.search-filter {
 		display: block !important;
