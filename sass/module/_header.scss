@@ -5,14 +5,18 @@ header {
 	position: fixed;
 	z-index: 100;
 
-	background: $coal;
+	background: $blue;
+
+	-moz-box-shadow: 0 0 10px lighten($coal, 5%);
+	-webkit-box-shadow: 0 0 10px lighten($coal, 5%);
+	box-shadow: 0 0 10px lighten($coal, 5%);
 }
 
 .nav-wrapper {
 	max-width: $full;
 	margin: 0 auto;
 	padding: 0 25px;
-	color: $teal;
+	color: $white;
 
 	h1 {
 		font-size: 35px;
@@ -25,9 +29,9 @@ header {
 		input {
 			width: 300px;
 			padding: 5px 15px;
-			background: $teal;
+			background: $blue;
 			color: $white;
-			border: none;
+			border: 2px solid $white;
 			box-sizing: border-box;
 			font-size: 1.2rem;
 			letter-spacing: 1px;

@@ -1,7 +1,7 @@
 .review-form {
 	margin-top: 25px;
 	padding: 10px;
-	background: $teal;
+	background: $blue;
 	text-align: center;
 
 	h4 { color: $white; }
@@ -67,5 +67,5 @@
 	}
 }
 
-.ng-invalid { border-color: red; }
-.ng-valid { border-color: $red; }
+.ng-invalid { border-color: $red; }
+.ng-valid { border-color: $green; }

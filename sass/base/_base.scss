@@ -14,11 +14,11 @@ body {
 	max-width: $full;
 	min-height: 100%;
 	margin: 0 auto;
-	padding: 100px 25px;
+	padding: 100px 0;
 
-	@include small() {
+	@include tablet() {
 		padding: 0px;
-		padding-top: 125px;
+		padding-top: 150px;
 
 		h2, h3, h4, blockquote {
 			padding: 0 10px;
