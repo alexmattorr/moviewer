@@ -51,33 +51,33 @@
 							<ul>
 								<li class="review" ng-repeat="review in movie.reviews">
 									<blockquote>
-										{{review.stars}} Stars<br />
-										{{review.comment}}<br />
-										{{review.username}}
+										<?php
+											$con=mysql_connect("localhost", "root", "root");
+											mysql_select_db("moviewer");
+											$result = mysql_query("SELECT * FROM movie_reviews");
+											while($row = mysql_fetch_array($result)) {
+												print $row['stars'];
+												print $row['comment'];
+												print $row['username'];
+											}
+											mysql_close();
+										?>
 									</blockquote>
 								</li>
 							</ul>
-							<form class="review-form" name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(movie)"novalidate class="tab" >
-								<blockquote class="tab-info-block" ng-show="review">
-									{{reviewCtrl.review.stars}} Stars<br />
-									{{reviewCtrl.review.comment}}<br />
-									- {{reviewCtrl.review.username}}
-								</blockquote>
+							<form action="database.php" method="post" class="review-form" name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(movie)"novalidate class="tab">
 								<h4>Submit a Review</h4>
-								<fieldset class="form-group">
-									<select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" required />
-										<option value="5">Rate the movie</option>
-									</select>
-								</fieldset>
-								<fieldset class="form-group">
-									<textarea ng-model="reviewCtrl.review.comment" class="form-control" placeholder="Write a review" title="Review" required /> </textarea>
-								</fieldset>
-								<fieldset class="form-group">
-									<input ng-model="reviewCtrl.review.username" type="text" class="form-control review-email" placeholder="username" title="username" required />
-								</fieldset>
-								<fieldset class="form-group">
-									<input type="submit" class="review-submit" value="Submit Review" />
-								</fieldset>
+								<select name="stars" id="">
+									<option>Rate the Movie</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+								<textarea name="comment" id="" cols="30" rows="10" placeholder="Write a comment"></textarea>
+								<input name="username" type="text" placeholder="Username">
+								<input type="submit" class="review-submit" value="Submit Review">
 							</form>
 						</div>
 					</section>

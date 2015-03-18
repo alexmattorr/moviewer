@@ -7,44 +7,35 @@
 	h4 { color: $white; }
 	textarea:focus, input:focus {  outline: 0; }
 
-	.review-submit, select {
-		width: 100%;
-		margin: 5px auto;
-	}
-
-	.review-email, textarea {
-		width: 100%;
-		margin: 5px auto;
-	}
-
 	input, textarea, select {
-		border-width: 2px;
-		border-radius: 0px;
-		box-sizing: border-box;
-		padding-left: 10px;
+		width: 100%;
+		margin:  5px auto;
+		padding: 10px;
 		background: $white;
 		color: $coal;
 		font-family: $site-font;
+		border: none;
+		box-sizing: border-box;
+
+		&:focus { outline: none; }
+
 	}
 
 	.review-submit {
+		height: 40px;
 		background: $coal;
-		border: none;
 		color: $white;
 		font-size: 16px;
-		font-family: $site-font;
 		cursor: pointer;
 		transition-property: background, color;
 		transition-duration: .3s;
-
 		&:hover {
 			background: $white;
 			color: $coal;
 		}
 	}
 
-	textarea { height: 50px; }
-	input { height: 25px; }
+	textarea { max-height: 50px; }
 
 	::-webkit-input-placeholder {
 		font-family: $site-font;
