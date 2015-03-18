@@ -24,6 +24,19 @@
       		};
    	});
 
+    	app.controller('moviewer',function($scope,$http,$interval){
+		load_comments();
+		$interval(function(){
+			load_comments();
+		}, 300);
+		
+		function load_comments(){
+			$http.get('http://localhost:8888/load').success(function(data){
+				$scope.profile_comments=data;
+			});
+		};
+	});
+
   	var movie = [{ 
 	    	name: 'Hot Tub Time Machine 2',
 	    	director: 'Steve Pink',
