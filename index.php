@@ -8,11 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<!-- JS Library -->
 	<script type="text/javascript" src="js/lib/angular.min.js"></script>
-	<script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/lib/require.min.js"></script>
 	<!-- User JS -->
 	<script type="text/javascript" src="js/movieModule.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body ng-controller="MovieController as movie">
 	<header>
@@ -50,21 +48,15 @@
 						</article>
 						<div class="tab-info" ng-show="tab.isSet(3)" class="tab">
 							<ul>
-								<li class="review">
-									<blockquote>
-										<?php
-											$con=mysql_connect("localhost", "root", "root");
-											mysql_select_db("moviewer");
-											$result = mysql_query("SELECT * FROM movie_reviews");
-											while($row = mysql_fetch_array($result)) {
-												print $row['stars'];
-												print $row['comment'];
-												print $row['username'];
-											}
-											mysql_close();
-										?>
-									</blockquote>
-								</li>
+								<?php
+									$con=mysql_connect("localhost", "root", "root");
+									mysql_select_db("moviewer");
+									$result = mysql_query("SELECT * FROM movie_reviews");
+									while($row = mysql_fetch_array($result)) {
+										echo "<li class='review'>" . "<b>" . $row['stars'] . "</b>" . "<br /><br />" .$row['comment'] . "<br /><br />" . "<b>" . $row['username'] . "</b>" . "</li>";
+									}
+									mysql_close();
+								?>
 							</ul>
 							<form action="database.php" method="post" class="review-form" name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(movie)"novalidate class="tab">
 								<h4>Submit a Review</h4>

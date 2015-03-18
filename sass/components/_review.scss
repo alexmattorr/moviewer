@@ -3,6 +3,7 @@
 	padding: 10px;
 	background: darken($white, 5%);
 	&:first-child { margin-top: -5px; }
+	b { font-weight: bold; }
 	@include small() {
 		border-left: none;
 		border-right: none;
