@@ -46,10 +46,11 @@
 								<h2>{{movie.name}}</h2>
 								<blockquote class="tab-info-block">{{movie.description}}</blockquote>
 							</div>
+
 						</article>
 						<div class="tab-info" ng-show="tab.isSet(3)" class="tab">
 							<ul>
-								<li class="review" ng-repeat="review in movie.reviews">
+								<li class="review">
 									<blockquote>
 										<?php
 											$con=mysql_connect("localhost", "root", "root");
@@ -81,17 +82,10 @@
 							</form>
 						</div>
 					</section>
-					<h4 class="rating">{{movie.rating}}</h4>
+					<h4 ng-class="{'bad': movie.rating == 'R', 'normal': movie.rating == 'PG-13', 'good': movie.rating == 'PG'}" class="rating">{{movie.rating}}</h4>
 				</div>
 			</div>
 		</div>
 	</div>
-<!-- 
-	<footer>
-		<div class="inner-footer">
-			
-		</div>
-	</footer>
--->
 </body>
 </html>

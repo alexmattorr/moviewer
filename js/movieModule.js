@@ -45,16 +45,7 @@
 	    	rating: "PG-13",
 	    	images: [
 	    		"img/hot-tub-time-machine-2.png"
-	    	],
-	    	reviews: [{
-		        	comment: "The movie was awesome!",
-		        	username: "alexmattorr@gmail.com",
-		        	stars: "4"  
-		}, {
-		        	comment: "Opened up a whole new perspective.",
-		        	username: "jane1995@yahoo.com",
-		        	stars: "5"
-	      	}]
+	    	]
 	}, { 
 	    	name: 'The Duff',
 	    	director: 'Ari Sandel',
@@ -63,16 +54,7 @@
 	     	rating: "PG-13",
 	     	images: [
 	     		"img/the-duff.png"
-	     	],
-	     	reviews: [{
-		        	comment: "The movie was awesome!",
-		        	username: "alexmattorr@gmail.com",
-		        	stars: "4"  
-	    	  }, {
-		        	comment: "Opened up a whole new perspective.",
-		        	username: "jane1995@yahoo.com",
-		        	stars: "3"
-	      	}]
+	     	]
 	}, { 
 		name: 'Seventh Son',
 		director: 'Sergei Bodrov',
@@ -81,16 +63,7 @@
 		rating: "PG-13",
 		images: [
 			"img/seventh-son.png"
-		],
-		reviews: [{
-			comment: "The movie was awesome!",
-		        	username: "alexmattorr@gmail.com",
-		        	stars: "4" 
-		}, {
-		        	comment: "Opened up a whole new perspective.",
-		        	username: "jane1995@yahoo.com",
-		        	stars: "3"
-		}]
+		]
 	}, { 
 		name: 'The Spongebog Movie: Sponge Out Of Water',
 		director: 'Paul Tibbitt',
@@ -99,16 +72,7 @@
 		rating: "PG",
 		images: [
 			"img/spongebob.png"
-		],
-		reviews: [{
-			comment: "The movie was awesome!",
-			username: "alexmattorr@gmail.com",
-			stars: "4"  
-		}, {
-			comment: "Opened up a whole new perspective.",
-			username: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		]
 	}, { 
 		name: 'Fifty Shades of Grey',
 		director: 'Sam Taylor-Johnson',
@@ -117,16 +81,7 @@
 		rating: "R",
 		images: [
 			"img/50-shades.png"
-		],
-		reviews: [{
-			comment: "The movie was awesome!",
-			username: "alexmattorr@gmail.com",
-			stars: "4"  
-		}, {
-			comment: "Opened up a whole new perspective.",
-			username: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		]
 	}, { 
 		name: 'Paddington',
 		director: 'Paul King',
@@ -135,16 +90,7 @@
 		rating: "PG",
 		images: [
 			"img/paddington.png"
-		],
-		reviews: [{
-			comment: "The movie was awesome!",
-			username: "alexmattorr@gmail.com",
-			stars: "4"  
-		}, {
-			comment: "Opened up a whole new perspective.",
-			username: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		]
 	}, { 
 		name: 'The Wedding Ringer',
 		director: 'Jeremy Garelick',
@@ -153,16 +99,7 @@
 		rating: "R",
 		images: [
 			"img/the-wedding-ringer.png"
-		],
-		reviews: [{			
-			comment: "The movie was awesome!",
-			username: "alexmattorr@gmail.com",
-			stars: "4"  
-		}, {
-			comment: "Opened up a whole new perspective.",
-			username: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		]
 	}, { 
 		name: 'American Sniper',
 		director: 'Clint Eastwood',
@@ -171,16 +108,7 @@
 		rating: "R",
 		images: [
 			"img/American-Sniper.png"
-		],
-		reviews: [{
-			comment: "The movie was awesome!",
-			username: "alexmattorr@gmail.com",
-			stars: "4"  
-		}, {
-			comment: "Opened up a whole new perspective.",
-			username: "jane1995@yahoo.com",
-			stars: "3"
-		}]
+		]
 	},{ 
 		name:'Kingsman: The Secret Service',
 		director: 'Matthew Vaughn',
@@ -189,15 +117,6 @@
 		rating: "R",
 		images: [
 			"img/kingsman.png"
-		],
-		reviews: [{
-			comment: "The movie was awesome!",
-			username: "alexmattorr@gmail.com",
-			stars: "5"  
-		}, {
-			comment: "Opened up a whole new perspective.",
-			username: "jane1995@yahoo.com",
-			stars: "2"
-		}]
+		]
 	}];
 })();

@@ -41,8 +41,10 @@
 		height: 25px; 
 		&.rating {
 			padding: 10px 10px 5px 10px;
-			background: $blue;
 			color: $white;
+			&.bad { background: $red }
+			&.normal { background: $yellow }
+			&.good { background: $green }
 		}
 	}
 
