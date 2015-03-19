@@ -1,0 +1,62 @@
+.review-form {
+	margin-top: 25px;
+	padding: 10px;
+	background: $blue;
+	text-align: center;
+
+	h4 { color: $white; }
+	textarea:focus, input:focus {  outline: 0; }
+
+	input, textarea, select {
+		width: 100%;
+		margin:  5px auto;
+		padding: 10px;
+		background: $white;
+		color: $coal;
+		font-family: $site-font;
+		border: none;
+		box-sizing: border-box;
+
+		&:focus { outline: none; }
+
+	}
+
+	.review-submit {
+		height: 40px;
+		background: $coal;
+		color: $white;
+		font-size: 16px;
+		cursor: pointer;
+		transition-property: background, color;
+		transition-duration: .3s;
+		&:hover {
+			background: $white;
+			color: $coal;
+		}
+	}
+
+	textarea { max-height: 50px; }
+
+	::-webkit-input-placeholder {
+		font-family: $site-font;
+		letter-spacing: 1px;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		font-family: $site-font;
+		letter-spacing: 1px;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		font-family: $site-font;
+		letter-spacing: 1px;  
+	}
+
+	:-ms-input-placeholder {  
+		font-family: $site-font;
+		letter-spacing: 1px; 
+	}
+}
+
+.ng-invalid { border-color: $red; }
+.ng-valid { border-color: $green; }

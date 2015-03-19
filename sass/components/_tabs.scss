@@ -1,0 +1,30 @@
+.tab {
+	height: 50%;
+	.tabs {
+		width: 100%;
+		margin-bottom: 25px;
+		li {
+			width: 33.3%;
+			float: left;
+
+			background: $blue;
+			text-align: center;
+
+			&.active {
+				background: $coal;
+			}
+
+			a  {
+				display: block;
+				padding: 10px 0px;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.tab-info-block {
+		max-height: 200px;
+		overflow: scroll;
+	}
+}

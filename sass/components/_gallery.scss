@@ -1,0 +1,26 @@
+.gallery {
+	height: 300px;
+	overflow: hidden;
+	text-align: center;
+	transition-property: height;
+	transition-duration: .3s;
+	img {
+		width: 100%;
+		height: auto;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		transition: all .3s ease;
+	}
+
+	&.is-active {
+		height: 100px;
+	}
+}
+
+@include tablet() {
+	.gallery {
+		width: 100%;
+	}
+}
